@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hi">
+<body>
+    <p>Click to find useless info because You can use calender and find out time in one tap</p>
+    <p id="date"></p>
+    <p id="greeting"></p>
+    <button type="button" onclick="myfunction()">I am useless like a badam</button>
+    <script>
+        function myfunction(){
+            var greeting;
+            var time = new Date().getHours();
+            if (time < 12 ){
+                greeting = "Good morning people .My hopes are that you are made to get up at 4";
+            }
+            else  if(time < 18 ){
+                greeting = "Good afternoon people. My hopes are that you turn into a sloth";
+            }
+            else  if(time < 20 ){
+                greeting = "Good evening people. My hopes are that you sleep ate 1 in the morning";
+            }
+            else { greeting = "Greetings Greetings people. This time I have a very kind and genourus hope.I hope that you get haunted in your dreams"}
+           document.getElementById("date").innerHTML= "current hour is :" + time;
+           document.getElementById("greeting").innerHTML= greeting;
+        }
+    </script>
+</body>
+</html>
